@@ -148,18 +148,13 @@
         NSLog(@"Success callback wrapper not yet implemented for class %@", [obj class]);
     }
     
-    NSString *responseJavascript = [result toSuccessCallbackString:callbackId];
-    if(responseJavascript) {
-        [self writeJavascript:responseJavascript];
-    }
+	[self.commandDelegate sendPluginResult:result callbackId:callbackId];
 }
 
 - (void)sendFailureTo:(NSString *)callbackId {
     CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    NSString *responseJavascript = [result toErrorCallbackString:callbackId];
-    if(responseJavascript) {
-        [self writeJavascript:responseJavascript];
-    }
+
+	[self.commandDelegate sendPluginResult:result callbackId:callbackId];
 }
 
 @end
