@@ -7,6 +7,7 @@
 
 #import "CardIOPlugin.h"
 #import "CardIOPaymentViewController.h"
+#import "CardIOCreditCardInfo.h"
 
 #pragma mark -
 
