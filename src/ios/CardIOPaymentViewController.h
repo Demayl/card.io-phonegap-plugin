@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CardIOPaymentViewControllerDelegate.h"
+#import "CardIOCreditCardInfo.h"
 
 /// CardIOPaymentViewController is one of two main entry points into the card.io SDK.
 /// @see CardIOView
