@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CardIOCreditCardInfo.h"
 
 @class CardIOPaymentViewController;
 @class CardIOCreditCardInfo;
